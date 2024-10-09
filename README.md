@@ -1,60 +1,75 @@
+Project Overview
 
-AgriOk: Precision Agriculture Solution
-Overview
-Agri-Ok is a cutting-edge precision agriculture platform designed to help farmers optimize crop yield, manage resources efficiently, and promote sustainable farming. By integrating IoT sensors with real-time data processing, machine learning models, and an intuitive user interface, Agri-Ok provides actionable insights to farmers, including irrigation scheduling, fertilization guidance, and pest control recommendations.
+AgriOk is an IoT-driven precision agriculture platform designed to empower farmers with actionable insights using real-time data from sensors in the field. It provides a combination of data analytics and machine learning to help optimize crop health, irrigation, fertilization, and pest control. Through an easy-to-use web interface, farmers can access recommendations on managing their farms, receive alerts, and monitor data from various sensors (e.g., soil moisture, temperature, humidity).
 
-Project Architecture
-The platform uses a multi-layered architecture for seamless data flow and efficient processing of sensor data. Here’s a high-level view of the system:
+The platform incorporates a robust backend, scalable cloud infrastructure, and seamless integration of IoT devices for data collection and management. The aim is to promote sustainable agriculture through technology, allowing farmers to increase productivity while reducing resource waste.
 
-Components:
-Farm Sensors: IoT devices collect real-time data (soil moisture, temperature, humidity, pH levels).
-Local Server: Receives data from the sensors and forwards it to the hosted server via MQTT protocol.
-Hosted Server: Web server and MQTT broker that handle the data flow from farm sensors to the backend application.
-Machine Learning Models: Analyze sensor data in real-time and generate actionable insights.
-Front-End: A user-friendly dashboard for farmers to monitor sensor data and receive recommendations.
-Backend: Processes and stores data, while providing APIs for front-end and machine learning integration.
-Database: Stores time-series sensor data and user-specific recommendations.
-Features
-Real-Time Data Monitoring: Farmers can view live sensor readings for soil moisture, temperature, and other critical metrics.
-Actionable Recommendations: The system provides advice on when to water crops, apply fertilizers, or take preventive actions based on machine learning predictions.
-Mobile Access: The front-end is optimized for mobile devices, ensuring farmers can monitor their fields from anywhere.
-Scalable Infrastructure: Built using cloud infrastructure for scalability, ensuring it can handle data from large farms with multiple sensors.
-Model Development and Evaluation
-Features
-Model Creation: The machine learning models focus on time-series forecasting, anomaly detection, and decision tree algorithms.
-Training: Models are trained on historical sensor data and validated to provide optimal performance for specific farm environments.
-Evaluation: Model performance is evaluated using:
-Accuracy
-Precision
-Recall
-F1-score
-Confusion Matrix
-Classification Reports
-Pipeline Creation
-Functions
-Modular Pipeline: Each step of the pipeline—from data collection to analysis—is modular, allowing flexibility and easy updates.
-Retraining Mechanism: A mechanism is included to retrain models periodically using new data, ensuring accuracy in changing environmental conditions.
-GitHub Repository Structure
-This project is organized in a clear and accessible format to ensure smooth deployment and collaboration.
+                             Features
+1. Real-Time Data Collection:
+IoT sensors monitor soil moisture, temperature, humidity, and pH levels.
+Data is sent to a local server, processed using the MQTT protocol, and stored in a time-series database for real-time analytics.
 
-Repository Contents:
-README.md: Detailed instructions on how to set up and run the project.
-Source Code: Includes all source code for the front-end, back-end, and machine learning models.
-Deployment Files: Configuration files for deploying the system on a cloud platform.
-Access the GitHub repository here:
-Agri-Ok Repository
+2. Machine Learning-Driven Insights:
+Predictive models forecast irrigation needs, detect anomalies (e.g., pest outbreaks), and generate recommendations for optimal farm management.
 
-Deployment
-The Agri-Ok system is designed for deployment in the cloud, enabling scalability and real-time access. The platform uses:
+3. User Interface:
+Responsive web interface built with React.js allows farmers to access their data, receive alerts, and view real-time recommendations.
+Data visualization of trends using D3.js/Chart.js for easy monitoring of farm conditions.
 
-MQTT Protocol: For real-time data streaming from IoT sensors.
-Cloud Platform: Agri-Ok is deployed on cloud platforms such as AWS, Google Cloud, or Azure, ensuring scalability and high availability.
-For local development and testing, you can deploy the system using Docker containers.
+4. Cloud-Based Infrastructure:
+Hosted on cloud platforms for scalability and automated deployment.
+Integrates IoT data via MQTT for real-time data streaming.
 
-Running the Project
-Prerequisites
-To run this project locally, you will need:
+5. Database Management:
+Scalable time-series database (InfluxDB) stores IoT data, while PostgreSQL manages users and recommendations.
 
-Python 3.x
-Node.js
-Docker (for containerized deployment)
+6. Mobile Accessibility:
+Responsive design ensures easy access from smartphones and tablets for farmers on the go.
+
+
+         Technologies Used
+Frontend:
+React.js for UI development.
+D3.js/Chart.js for real-time data visualization.
+HTML5, CSS3, JavaScript for core interface design.
+
+Backend:
+Python (Flask/Django) or Node.js for API management and data serving.
+Machine learning models built with TensorFlow, Keras, and Scikit-learn for predictive analysis.
+
+Database:
+InfluxDB for IoT sensor data (time-series).
+PostgreSQL for user and recommendation management.
+
+IoT Integration:
+MQTT broker (Mosquitto) for handling IoT sensor data streams.
+Local server for data pre-processing before transmission to the cloud.
+
+Cloud Infrastructure:
+AWS IoT Core or Google Cloud IoT for hosting and managing IoT devices.
+Docker and Kubernetes for containerization and automated deployment pipelines.
+
+Repository link: https://github.com/meekmarcelin/AgriOk-Capstone.git
+
+          Deployment Plan
+
+Cloud Deployment:
+The web app and backend will be hosted on AWS/GCP.
+Use Docker for containerization and Kubernetes for scaling microservices.
+
+CI/CD Pipelines:
+Automated deployment using Jenkins/GitHub Actions, ensuring continuous delivery of updates.
+
+Monitoring:
+Grafana will be integrated for real-time monitoring of server and IoT data performance.
+Design Files
+             Mockups
+
+<img width="464" alt="agriok artchitecture" src="https://github.com/user-attachments/assets/02d4e116-5079-4552-aa01-56e001d67a9c">
+
+
+link to mockup: https://agriokrwanda.renderforestsites.com/
+
+
+
+
