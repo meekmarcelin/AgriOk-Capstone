@@ -1,5 +1,5 @@
 
-Agri-Ok: Precision Agriculture Solution
+AgriOk: Precision Agriculture Solution
 Overview
 Agri-Ok is a cutting-edge precision agriculture platform designed to help farmers optimize crop yield, manage resources efficiently, and promote sustainable farming. By integrating IoT sensors with real-time data processing, machine learning models, and an intuitive user interface, Agri-Ok provides actionable insights to farmers, including irrigation scheduling, fertilization guidance, and pest control recommendations.
 
