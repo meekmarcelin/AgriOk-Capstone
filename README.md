@@ -73,7 +73,7 @@ link to mockup: https://agri-ok.vercel.app/#/
 
 
     
-    Demo vidio
+    Demo vidio: https://youtu.be/Wddhod0bCbQ
     
 
 
