@@ -68,7 +68,9 @@ Design Files
 <img width="464" alt="agriok artchitecture" src="https://github.com/user-attachments/assets/02d4e116-5079-4552-aa01-56e001d67a9c">
 
 
-link to mockup: https://agriokrwanda.renderforestsites.com/
+link to mockup: https://agri-ok.vercel.app/#/
+
+
 
     
     Demo vidio
